@@ -15,7 +15,7 @@ function NavbarComponent() {
         <Navbar.Collapse id="basic-navbar-nav">
 
             <Nav className="me-auto" style={{ width: '100%', justifyContent: 'flex-end' }}>
-              <Nav.Link href="#link" style={{ color: 'white', fontWeight: 'bold' }}>Information</Nav.Link>
+              <Nav.Link href="#link" style={{ color: 'white', fontWeight: 'bold' }}>Galleri</Nav.Link>
               <Nav.Link href="#link" style={{ color: 'white', fontWeight: 'bold' }}>Billeder</Nav.Link>
               <Nav.Link href="#link" style={{ color: 'white', fontWeight: 'bold' }}>Videoer</Nav.Link>
               <Nav.Link href="#link" style={{ color: 'white', fontWeight: 'bold' }}>Om</Nav.Link>

@@ -3,7 +3,7 @@ import { Container, Button, Nav, Navbar, NavDropdown, Image } from 'react-bootst
 import '../App.css';
 import logo from '../resources/logo5.png';
 
-function NavbarComponent() {
+function BottomNavbarComponent() {
   return (
     <Navbar expand="lg" style={{ backgroundColor: '#D1202C', margin: 0, padding: 10}}>
       <Container >
@@ -18,4 +18,4 @@ function NavbarComponent() {
   );
 }
 
-export default NavbarComponent;
+export default BottomNavbarComponent;
