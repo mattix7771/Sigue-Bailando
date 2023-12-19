@@ -1,5 +1,6 @@
 import React from 'react';
 import { Container, Button, Nav, Navbar, NavDropdown, Image } from 'react-bootstrap';
+import '../App.css';
 import logo from '../resources/logo5.png';
 
 function NavbarComponent() {
