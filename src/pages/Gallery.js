@@ -3,44 +3,41 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import '../App.css';
 import Navbar from '../widgets/Navbar';
 import BottomBar from '../widgets/BottomBar';
-import { Container, Row, Col, Image, Card } from 'react-bootstrap';
+import Background from '../resources/flag stripes.png';
+import Masonry, {ResponsiveMasonry} from "react-responsive-masonry"
 
 function Gallery() {
+
+  function importAll(r) {
+    return r.keys().map(r);
+  }
+
+  const images = importAll(require.context('../resources/media', false, /\.(png|jpe?g)$/));
+  const videos = importAll(require.context('../resources/media', false, /\.mp4$/));
+  
   return (
-    <div style={{ display: 'flex', flexDirection: 'column' }}>
+    <div className='flex flex-col'>
       <Navbar />
-      
-      <div style={{display: 'grid', gridTemplateColumns:'1fr 1fr 1fr', gridTemplateRows:'1fr 1fr 1fr 1fr'}}>
 
-        
-        <Card border='info' className='m-2 p-2 w-max h-max'>
-          <iframe src="https://www.facebook.com/plugins/video.php?height=308&href=https%3A%2F%2Fwww.facebook.com%2Fkatiuscia.rado%2Fvideos%2F547544007342464%2F%3Fidorvanity%3D651480019849154&show_text=false&width=560&t=0" width="430" height="308" style={{border:'none', overflow:'hidden'}} scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
-        </Card>
-        <Card border='info' className='m-2 p-2 w-max h-max'>
-          <iframe src="https://www.facebook.com/plugins/video.php?height=308&href=https%3A%2F%2Fwww.facebook.com%2Fkatiuscia.rado%2Fvideos%2F547544007342464%2F%3Fidorvanity%3D651480019849154&show_text=false&width=560&t=0" width="430" height="308" style={{border:'none', overflow:'hidden'}} scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
-        </Card>
-        <Card border='info' className='m-2 p-2 w-max h-max'>
-          <iframe src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2Fkatiuscia.rado%2Fvideos%2F747069483279006%2F%3Fidorvanity%3D651480019849154&show_text=false&width=560&t=0" width="430" height="314" style={{border:'none', overflow:'hidden'}} scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
-        </Card>
-        <Card border='info' className='m-2 p-2 w-full h-max'>
-          <iframe src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2Fkatiuscia.rado%2Fvideos%2F808250447310291%2F%3Fidorvanity%3D651480019849154&show_text=false&width=560&t=0" width="530" height="314" style={{border:'none', overflow:'hidden'}} scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
-        </Card>
-        <Card border='info' className='m-2 p-2 w-full h-max'>
-          <iframe src="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Fkatiuscia.rado%2Fvideos%2F1334048347389043%2F%3Fidorvanity%3D651480019849154&show_text=false&width=267&t=0" width="367" height="476" style={{border:'none', overflow:'hidden'}} scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
-        </Card>
+      <div className='flex flex-wrap m-5'>
+        <Masonry columnsCount={4} gutter={50}>
+          {images.map((image, index) => (
+            <div key={index}>
+                <img src={image} style={{width:'1170px'}}/>
+            </div>
+          ))}
+          {videos.map((video, index) => (
+            <div key={index}>
+                <video controls width='1170'>
+                  <source src={video} type="video/mp4" ></source>
+                </video>
+            </div>
+          ))}
+          
+          <iframe src="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Fkatiuscia.rado%2Fvideos%2F1334048347389043%2F%3Fidorvanity%3D651480019849154&show_text=false&width=267&t=0" width="100%" height="100%" style={{border:'none', overflow:'hidden'}} scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
+
+        </Masonry>
       </div>
-
-
-        <Card border='info' className='m-2 p-2'>
-          <video controls>
-            <source src={require("../resources/video1.mp4")} type="video/mp4"></source>
-          </video>
-        </Card>
-        <Card border='info' className='m-2 p-2'>
-          <video controls>
-            <source src={require("../resources/video2.mp4")} type="video/mp4"></source>
-          </video>
-        </Card>
       <BottomBar />
     </div>
   );
