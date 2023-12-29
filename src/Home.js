@@ -15,10 +15,7 @@ function Home() {
       <Main />
       <BottomBar />
 
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/gallery" element={<Gallery />} />
-      </Routes>
+
     </div>
   );
 }
