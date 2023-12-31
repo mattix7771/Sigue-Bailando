@@ -3,7 +3,6 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import '../App.css';
 import Navbar from '../widgets/Navbar';
 import BottomBar from '../widgets/BottomBar';
-import Background from '../resources/flag stripes.png';
 import Masonry, {ResponsiveMasonry} from "react-responsive-masonry"
 
 function Gallery() {
