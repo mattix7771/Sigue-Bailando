@@ -7,10 +7,10 @@ function BottomNavbarComponent() {
   return (
     <Navbar expand="lg" style={{ backgroundColor: '#D1202C', margin: 0, padding: 10}}>
       <Container >
-        <div >
-          <Navbar.Brand href="#home" style={{ color: 'white', fontWeight: 'bold' }}>SIGUE BAILANDO</Navbar.Brand>
-          <a href='https://www.facebook.com/groups/651480019849154/' target="_blank" rel="noopener noreferrer">
-            <Image src={require('../resources/fb.png')} rounded fluid style={{ width: '8%' }} />
+        <div className='inline-flex'>
+          <Navbar.Brand href="#home" className='text-white font-bold'>SIGUE BAILANDO</Navbar.Brand>
+          <a className='ml-auto' href='https://www.facebook.com/groups/651480019849154/' target="_blank" rel="noopener noreferrer">
+            <Image className='mr-auto' src={require('../resources/fb.png')} rounded fluid style={{ width: '8%' }} />
           </a>
         </div>
       </Container>
