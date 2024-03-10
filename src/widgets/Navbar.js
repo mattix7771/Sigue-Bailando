@@ -23,9 +23,9 @@ function NavbarComponent() {
         </Navbar.Collapse>
       </Container>
 
-      <div className='bg-white block rounded-full mr-8' style={{ width: '30px' }}>
+      <a className='bg-white block rounded-full mr-8' style={{ width: '30px' }} href='https://www.facebook.com/groups/651480019849154/' target="_blank" rel="noopener noreferrer">
         <Image className='mr-auto' src={require('../resources/fb_white.png')} rounded fluid style={{ width: '100%' }} />
-      </div>
+      </a>
 
     </Navbar>
   );
