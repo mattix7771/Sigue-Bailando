@@ -35,23 +35,38 @@ function Main() {
     <div className='bg-gray-200'>
 
       <div>
-        <div style={{ position: 'relative' }}>
-          <video autoPlay muted loop src={require('../resources/video.mp4')} type="video/mp4" className='blur-sm w-full'/>
-          <div className='absolute inline-flex items-center top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-slate-200 font-serif
-            text-xs font-thin w-3/4
-            lg:text-3xl lg:font-bold '>
+        <div className='relative'>
+          <video autoPlay muted loop src={require('../resources/video.mp4')} type="video/mp4" className='blur-sm w-full hidden lg:block'/>
+          <video autoPlay muted loop src={require('../resources/Sup/VIDEO-2024-09-12-00-27-19.mp4')} type="video/mp4" className='blur-sm w-full lg:hidden contrast-75'/>
+          <div className='absolute flex items-center justify-center top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-slate-200
+            w-4/5'>
         
-            Experience the joy of dancing Bachata with Sigue Bailando and Latin Dance in Esbjerg.<br/>
-            Visit our Facebook group here<br/><br/>
+            <div className='text-center font-Barlow text-slate-200'>
+              <div className='font-semibold text-lg lg:text-3xl mb-3'>Experience the joy of dancing Bachata with </div>
+              <div className='font-extrabold text-lg lg:text-3xl mb-20'>SIGUE BAILANDO AND LATIN DANCE IN ESBJERG</div>
+    
+              <div>
+                Address: <br/>
+                Bachata sessions every week<br/>
+                Mondays from 19:00 to 22:00<br/>
+                Some Fridays from 19:00 to 21:00<br/>
+                Danmarksgade 53, 6700 Esbjerg, <br/>
+                on the ground floor
+              </div>
+              
 
-            Bachata sessions every week<br/>
-            Mondays from 19:00 to 22:00<br/>
-            Some Fridays from 19:00 to 21:00<br/>
-            Danmarksgade 53, 6700 Esbjerg, <br/>on the ground floor
+              <div className='mt-8'>
+                Join our Facebook group here
+                <img className='w-32 bg-white rounded-full mx-auto mt-2' src={require('../resources/fbJoin.png')}/>
+              </div>
+            </div>
 
-            <a className='bg-white block rounded-full p-[1px] max-w-[70px]' href='https://www.facebook.com/groups/651480019849154/' target="_blank" rel="noopener noreferrer">
+
+
+
+            {/* <div className='bg-white block rounded-full p-[1px] max-w-[70px]' href='https://www.facebook.com/groups/651480019849154/' target="_blank" rel="noopener noreferrer">
               <Image className='mr-auto' src={require('../resources/fb_white.png')} rounded fluid style={{ width: '100%' }} />
-            </a>
+            </div> */}
           </div>
         </div>
       </div>
@@ -65,23 +80,21 @@ function Main() {
 
           <Swiper
             rewind={true}
-            slidesPerView={3}
-            centeredSlides={false}
+            slidesPerView={2}
+            centeredSlides={true}
             spaceBetween={30}
+            initialSlide={1}
             pagination={{
-              type: 'fraction',
+              clickable: 'true',
+              type: 'bullets',
             }}
+            
             navigation={true}
-            modules={[Pagination, Navigation]}
+            modules={[Navigation]}
           >
             {swiper.map((image, index) => (
               <SwiperSlide key={index}>
-                <Image src={image} rounded fluid />
-              </SwiperSlide>
-            ))}
-            {swiper.map((image, index) => (
-              <SwiperSlide key={index}>
-                <Image src={image} rounded fluid />
+                <Image src={image} rounded fluid className='' />
               </SwiperSlide>
             ))}
           </Swiper>
@@ -97,22 +110,23 @@ function Main() {
           lg:grid lg:grid-flow-col lg:col-span-2 lg:space-x-16 lg:mx-14'>
 
           <div className='my-4 p-4 font-medium text-sm lg:text-lg shadow-lg'>
-            <span className='font-bold'>Open Entry:</span><br/>
+            <span className='font-bold'>Open to all Adults</span><br/>
             All are welcome, whether you come alone or with a partner, from first-timers to seasoned dancers. Our instructors will guide you to the class that aligns with your skills and aspirations.<br/>
-            We organize parties in Esbjerg where you will have the opportunity to dance :
-            Bachata, Dominican Bachata, Cuban Salsa, Kizomba, Reggaeton, Merengue, Cha Cha, and other Latin Dances.
-            Occasionally, on Fridays, we host free events for our members, such as a social dance and practice session, Bachata for beginners with Kati, and a Bachata class with Martin. Details will be posted in this group. Stay updated!
+            We organize parties in Esbjerg where you will have the opportunity to dance
+            Bachata and other Latin Dances.
+            Occasionally, on Fridays, we host free events for our members, such as a social dance and practice session. Details will be posted in our Facebook group. Go there to stay updated!
           </div>
 
           <div className='my-4 p-4 font-medium text-sm lg:text-lg shadow-lg'>
             <span className='font-bold'>Prices and Memberships:</span><br/>
-            <span className='underline'>Price for Monday Bachata classes:</span><br/>
-            40 kr for 1 hour<br/>
-            75 k for 2 or 3 hours for members (85 kr for non-members)<br/>
-            <span className='underline'>Other Memberships</span><br/>
-            The annual membership fee is 200 kr, starting in every January.<br/>
-            A periodic membership is also available at a cost of 100 kr.<br/>
-          </div>          
+            <p className='font-bold underline'>The annual membership fee is 200 kr, starting on every January</p><br/>
+            <span className='font-bold'>Monday Bachata Class:</span><br/>
+            40 kr for 1 hour<br/><br/>
+            
+            
+            <p className='font-bold'>All classes in 1 month: (must all be paid at once)</p>The monthly price varies depending on the number of lessons per month. This includes all 3 hours of classes every monday and will cost 70kr per session. <br/> (check our Facebook group for this month's price!)<br/>
+            
+          </div>
             
             
         </div>
@@ -121,7 +135,7 @@ function Main() {
           <div>
             <span className='font-bold'>Classes with Martin & Kati</span><br/>
             <span className='underline'>When?</span><br/>
-            Drop-in Bachata every Monday<br/>
+            Bachata classes every Monday<br/>
             19:00-20:00 Beginners: Master the basics and find your rhythm.<br/>
             20:00-21:00 Improvers Level 1: Spice up your dance with new moves.<br/>
             21:00-22:00 Improvers Level 2: Refine and elevate your Bachata style<br/>

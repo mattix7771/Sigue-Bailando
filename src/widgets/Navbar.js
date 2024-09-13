@@ -1,31 +1,50 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { Container, Button, Nav, Navbar, NavDropdown, Image } from 'react-bootstrap';
 import '../App.css';
+import logo from "../resources/logo4.png"
 
 function NavbarComponent() {
-  return (
-    <Navbar expand="lg" style={{ backgroundColor: '#D1202C', margin: 0, padding: 0 }}>
-      <Container>
-        <Navbar.Brand href="/" style={{ display: 'flex', alignItems: 'center', color: 'white', fontWeight: 'bold', padding: '10px' }}>
-          {/* <img src={logo} alt="Logo" /> */}
-          SIGUE BAILANDO
-        </Navbar.Brand>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        <Navbar.Collapse id="basic-navbar-nav">
 
-            <Nav className="me-auto" style={{ width: '100%', justifyContent: 'flex-end' }}>
-              <Nav.Link href="#gallery" style={{ color: 'white', fontWeight: 'bold' }}>Galleri</Nav.Link>
-              {/* <Nav.Link href="link" style={{ color: 'white', fontWeight: 'bold' }}>Billeder</Nav.Link>
-              <Nav.Link href="link" style={{ color: 'white', fontWeight: 'bold' }}>Videoer</Nav.Link>
-              <Nav.Link href="link" style={{ color: 'white', fontWeight: 'bold' }}>Om</Nav.Link> */}
-            </Nav>
-            
+  const [navOpacity, setNavOpacity] = useState(0);
+  const MAXSCROLL = 1000;
+
+  const handleScroll = () => {
+    if (navOpacity < MAXSCROLL){
+      setNavOpacity(window.scrollY/MAXSCROLL);
+    }
+  }
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    }
+  }, []);
+
+  return (
+    <Navbar variant="dark" expand="lg" className=' rounded-lg translate-x-[2.5%] translate-y-[15%] lg:m-0' style={{ backgroundColor: `rgba(229, 32, 44, ${navOpacity})`, padding: 0, position: "fixed", width: "95%", top: 0, "z-index": "1" }}>
+      <Container>
+        
+        <Navbar.Brand href="/" className='flex items-center text-white lg:px-3 font-serif'>
+          <img src={logo} alt="Logo" className='w-16 lg:w-24 rounded-xl lg:my-2 ml-1 lg:ml-20 mr-3 lg:mr-6' />
+          <span className='text-lg lg:text-4xl pt-1'>SIGUE BAILANDO</span>
+        </Navbar.Brand>
+
+        <Navbar.Toggle aria-controls="basic-navbar-nav" className="border-0"/>
+        <Navbar.Collapse id="basic-navbar-nav">
+          <Nav className="me-auto" style={{ width: '100%', justifyContent: 'flex-end' }}>
+            <Nav.Link href="#gallery" className='font-bold text-white text-2xl font-serif'>Gallery</Nav.Link>
+            {/* <Nav.Link href="link" style={{ color: 'white', fontWeight: 'bold' }}>Billeder</Nav.Link>
+            <Nav.Link href="link" style={{ color: 'white', fontWeight: 'bold' }}>Videoer</Nav.Link>
+            <Nav.Link href="link" style={{ color: 'white', fontWeight: 'bold' }}>Om</Nav.Link> */}
+          </Nav>    
+          <div className='bg-white rounded-full ml-20 lg:inline-block w-9' href='https://www.facebook.com/groups/651480019849154/' target="_blank" rel="noopener noreferrer">
+            <Image className='' src={require('../resources/fb_white.png')} />
+          </div>
         </Navbar.Collapse>
+
       </Container>
 
-      <a className='bg-white rounded-full mr-8 hidden lg:inline-block' style={{ width: '30px' }} href='https://www.facebook.com/groups/651480019849154/' target="_blank" rel="noopener noreferrer">
-        <Image className='' src={require('../resources/fb_white.png')} rounded fluid style={{ width: '100%' }} />
-      </a>
 
     </Navbar>
   );

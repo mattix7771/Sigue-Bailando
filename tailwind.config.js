@@ -2,7 +2,11 @@
 module.exports = {
   content: ["./src/**/*.{html,js}"],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        Barlow: ['Barlow Semi Condensed', 'sans-serif']
+      },
+    },
   },
   plugins: [],
 }
