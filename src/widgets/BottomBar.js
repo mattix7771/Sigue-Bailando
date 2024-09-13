@@ -1,17 +1,50 @@
 import React from 'react';
-import { Container, Button, Nav, Navbar, NavDropdown, Image } from 'react-bootstrap';
+import { Container, Button, Nav, Navbar, NavDropdown, Image, Brand } from 'react-bootstrap';
 import '../App.css';
+import logo from "../resources/logo4.png"
 
 function BottomNavbarComponent() {
   return (
-    <Navbar expand="lg" style={{ backgroundColor: '#D1202C', margin: 0, padding: 10}}>
-      <Container >
-        <div className='inline-flex'>
+<Navbar expand="lg" className="bg-black p-3 relative">
+  <Container className="flex justify-between items-center">
+    
+    <Navbar.Brand href="/" className="flex items-center text-white lg:px-3 font-serif">
+      <img src={logo} alt="Logo" className="w-16 lg:w-24 rounded-xl lg:my-2 ml-1 lg:ml-20 mr-3 lg:mr-6" />
+      <div className="text-lg lg:text-4xl pt-1">SIGUE BAILANDO</div>
+    </Navbar.Brand>
+    
+    <div className="text-white">Latin School in Esbjerg</div>
+
+    <div className="text-white lg:flex lg:flex-col lg:items-start">
+      <div className="flex mb-2 mt-4">
+        <img className="w-6 lg:w-8 mr-2" src={require('../resources/pin.png')} alt="Pin" />
+        <div>Danmarksgade 53, 6700 Esbjerg</div>
+      </div>
+
+      <div className="flex mb-2">
+        <img className="w-6 lg:w-8 mr-2" src={require('../resources/email.png')} alt="Email" />
+        <div>siguebalando@gmail.com</div>
+      </div>
+
+      <div className="flex mb-4">
+        <img className="w-6 lg:w-8 mr-2" src={require('../resources/phone.png')} alt="Phone" />
+        <div>60125289</div>
+      </div>
+            
+    </div>
+
+    <div className="text-gray-400">
+      <hr/>
+      <span>Copyright © 2024 Sigue Bailando - Dance School in Esbjerg</span>
+    </div>
+
+
+        {/* <div className='inline-flex'>
           <Navbar.Brand href="#home" className='text-white font-bold'>SIGUE BAILANDO</Navbar.Brand>
           <a className='ml-auto' href='https://www.facebook.com/groups/651480019849154/' target="_blank" rel="noopener noreferrer">
-            <Image className='mr-auto' src={require('../resources/fb.png')} rounded fluid style={{ width: '8%' }} />
+            
           </a>
-        </div>
+        </div> */}
       </Container>
     </Navbar>
   );

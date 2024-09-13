@@ -3,13 +3,14 @@ import { Container, Button, Nav, Navbar, NavDropdown, Image } from 'react-bootst
 import '../App.css';
 import logo from "../resources/logo4.png"
 
-function NavbarComponent() {
+function NavbarComponent({ opacity }) {
 
   const [navOpacity, setNavOpacity] = useState(0);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
   const MAXSCROLL = 1000;
 
   const handleScroll = () => {
-    if (navOpacity < MAXSCROLL){
+    if (navOpacity < MAXSCROLL && !isMenuOpen && !opacity){
       setNavOpacity(window.scrollY/MAXSCROLL);
     }
   }
@@ -21,8 +22,28 @@ function NavbarComponent() {
     }
   }, []);
 
+  useEffect(() => {
+    if(opacity){
+      setNavOpacity(opacity);
+    }
+  }, []);
+
+  const handleMenuOpen = () => {
+    setIsMenuOpen((prevState) => {
+      const newMenuOpenState = !prevState;
+  
+      if (newMenuOpenState) {
+        setNavOpacity(1);
+      } else{
+        setNavOpacity(window.scrollY/MAXSCROLL);
+      }
+
+      return newMenuOpenState;
+    });
+  }
+
   return (
-    <Navbar variant="dark" expand="lg" className=' rounded-lg translate-x-[2.5%] translate-y-[15%] lg:m-0' style={{ backgroundColor: `rgba(229, 32, 44, ${navOpacity})`, padding: 0, position: "fixed", width: "95%", top: 0, "z-index": "1" }}>
+    <Navbar id="navbar" variant="dark" expand="lg" className=' rounded-lg translate-x-[2.5%] translate-y-[15%] lg:m-0' style={{ backgroundColor: `rgba(229, 32, 44, ${navOpacity})`, padding: 0, position: "fixed", width: "95%", top: 0, "z-index": "10" }}>
       <Container>
         
         <Navbar.Brand href="/" className='flex items-center text-white lg:px-3 font-serif'>
@@ -30,7 +51,7 @@ function NavbarComponent() {
           <span className='text-lg lg:text-4xl pt-1'>SIGUE BAILANDO</span>
         </Navbar.Brand>
 
-        <Navbar.Toggle aria-controls="basic-navbar-nav" className="border-0"/>
+        <Navbar.Toggle aria-controls="basic-navbar-nav" className="border-0" onClick={handleMenuOpen}/>
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto" style={{ width: '100%', justifyContent: 'flex-end' }}>
             <Nav.Link href="#gallery" className='font-bold text-white text-2xl font-serif'>Gallery</Nav.Link>
@@ -38,9 +59,9 @@ function NavbarComponent() {
             <Nav.Link href="link" style={{ color: 'white', fontWeight: 'bold' }}>Videoer</Nav.Link>
             <Nav.Link href="link" style={{ color: 'white', fontWeight: 'bold' }}>Om</Nav.Link> */}
           </Nav>    
-          <div className='bg-white rounded-full ml-20 lg:inline-block w-9' href='https://www.facebook.com/groups/651480019849154/' target="_blank" rel="noopener noreferrer">
+          {/* <div className='bg-white rounded-full ml-20 lg:inline-block w-9' href='https://www.facebook.com/groups/651480019849154/' target="_blank" rel="noopener noreferrer">
             <Image className='' src={require('../resources/fb_white.png')} />
-          </div>
+          </div> */}
         </Navbar.Collapse>
 
       </Container>

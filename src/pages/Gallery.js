@@ -5,6 +5,7 @@ import Navbar from '../widgets/Navbar';
 import BottomBar from '../widgets/BottomBar';
 import Masonry, {ResponsiveMasonry} from "react-responsive-masonry"
 
+
 function Gallery() {
 
   function importAll(r) {
@@ -16,10 +17,10 @@ function Gallery() {
   
   return (
     <div className='flex flex-col'>
-      <Navbar />
+      <Navbar opacity={1}/>
 
-      <div className='flex flex-wrap m-5'>
-        <Masonry columnsCount={4} gutter={50}>
+      <div className='flex flex-wrap mt-24 mx-4 mb-4'>
+        <Masonry columnsCount={2} gutter={3}>
           {images.map((image, index) => (
             <div key={index}>
                 <img src={image} style={{width:'1170px'}}/>
@@ -33,8 +34,6 @@ function Gallery() {
             </div>
           ))}
           
-          <iframe src="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Fkatiuscia.rado%2Fvideos%2F1334048347389043%2F%3Fidorvanity%3D651480019849154&show_text=false&width=267&t=0" width="100%" height="100%" style={{border:'none', overflow:'hidden'}} scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
-
         </Masonry>
       </div>
       <BottomBar />
