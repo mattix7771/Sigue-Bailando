@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.24b52399.css",
-    "main.js": "/static/js/main.faf48f27.js",
+    "main.css": "/static/css/main.9b0ae3da.css",
+    "main.js": "/static/js/main.559f6ce5.js",
     "static/media/VIDEO-2024-09-12-00-47-49.mp4": "/static/media/VIDEO-2024-09-12-00-47-49.d45b8e3c6c89f2c67653.mp4",
     "static/media/video.mp4": "/static/media/video.c360e59ef61b83cf6d9b.mp4",
     "static/media/VIDEO-2024-09-12-00-27-19.mp4": "/static/media/VIDEO-2024-09-12-00-27-19.2566ce0dc3bd3c7b1923.mp4",
@@ -19,6 +19,7 @@
     "static/media/3.jpg": "/static/media/3.8ec98dd2c5854fa114de.jpg",
     "static/media/PHOTO-2024-09-12-00-47-49.jpg": "/static/media/PHOTO-2024-09-12-00-47-49.8ec98dd2c5854fa114de.jpg",
     "static/media/351744563___n.jpg": "/static/media/351744563_1593981374447407_4924163931767135249_n.1b7e7038290be7d0f3f6.jpg",
+    "static/media/fb banner.png": "/static/media/fb banner.3fe34e69b7c3ab7e50bf.png",
     "static/media/2.jpg": "/static/media/2.05596ff9aaa079124cb7.jpg",
     "static/media/PHOTO-2024-09-12-00-25-39.jpg": "/static/media/PHOTO-2024-09-12-00-25-39.05596ff9aaa079124cb7.jpg",
     "static/media/1photo2.jpg": "/static/media/1photo2.80047ea51f8734f3e478.jpg",
@@ -31,15 +32,16 @@
     "static/media/logo4.png": "/static/media/logo4.dfb24c118e91d2e4cc54.png",
     "static/media/banner2.jpg": "/static/media/banner2.30c56568e5446aa06cdb.jpg",
     "static/media/banner3.jpg": "/static/media/banner3.08c0a79323c2f830c0a3.jpg",
-    "static/media/fb.png": "/static/media/fb.f8803fc6f77532705dcb.png",
     "static/media/fbJoin.png": "/static/media/fbJoin.e96bac455bd8ddaa3525.png",
-    "static/media/fb_white.png": "/static/media/fb_white.8d51a55626e9bf107f8f.png",
+    "static/media/pin.png": "/static/media/pin.aa3e8a3d6eaeffeda4e6.png",
+    "static/media/phone.png": "/static/media/phone.dec2cc658da5dfe9a002.png",
+    "static/media/email.png": "/static/media/email.5b69233288e6b989c512.png",
     "index.html": "/index.html",
-    "main.24b52399.css.map": "/static/css/main.24b52399.css.map",
-    "main.faf48f27.js.map": "/static/js/main.faf48f27.js.map"
+    "main.9b0ae3da.css.map": "/static/css/main.9b0ae3da.css.map",
+    "main.559f6ce5.js.map": "/static/js/main.559f6ce5.js.map"
   },
   "entrypoints": [
-    "static/css/main.24b52399.css",
-    "static/js/main.faf48f27.js"
+    "static/css/main.9b0ae3da.css",
+    "static/js/main.559f6ce5.js"
   ]
 }
