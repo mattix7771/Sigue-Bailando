@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.9b0ae3da.css",
-    "main.js": "/static/js/main.559f6ce5.js",
+    "main.css": "/static/css/main.db7b48a5.css",
+    "main.js": "/static/js/main.edea7d52.js",
     "static/media/VIDEO-2024-09-12-00-47-49.mp4": "/static/media/VIDEO-2024-09-12-00-47-49.d45b8e3c6c89f2c67653.mp4",
     "static/media/video.mp4": "/static/media/video.c360e59ef61b83cf6d9b.mp4",
     "static/media/VIDEO-2024-09-12-00-27-19.mp4": "/static/media/VIDEO-2024-09-12-00-27-19.2566ce0dc3bd3c7b1923.mp4",
@@ -33,15 +33,17 @@
     "static/media/banner2.jpg": "/static/media/banner2.30c56568e5446aa06cdb.jpg",
     "static/media/banner3.jpg": "/static/media/banner3.08c0a79323c2f830c0a3.jpg",
     "static/media/fbJoin.png": "/static/media/fbJoin.e96bac455bd8ddaa3525.png",
+    "static/media/Membership application form.pdf": "/static/media/Membership application form.da850746caab911a20c9.pdf",
     "static/media/pin.png": "/static/media/pin.aa3e8a3d6eaeffeda4e6.png",
     "static/media/phone.png": "/static/media/phone.dec2cc658da5dfe9a002.png",
     "static/media/email.png": "/static/media/email.5b69233288e6b989c512.png",
+    "static/media/warning.png": "/static/media/warning.b1d3c5484a8cbb6991dd.png",
     "index.html": "/index.html",
-    "main.9b0ae3da.css.map": "/static/css/main.9b0ae3da.css.map",
-    "main.559f6ce5.js.map": "/static/js/main.559f6ce5.js.map"
+    "main.db7b48a5.css.map": "/static/css/main.db7b48a5.css.map",
+    "main.edea7d52.js.map": "/static/js/main.edea7d52.js.map"
   },
   "entrypoints": [
-    "static/css/main.9b0ae3da.css",
-    "static/js/main.559f6ce5.js"
+    "static/css/main.db7b48a5.css",
+    "static/js/main.edea7d52.js"
   ]
 }
