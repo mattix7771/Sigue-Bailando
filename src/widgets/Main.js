@@ -3,6 +3,7 @@ import { Container, Row, Col, Image } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../App.css';
 import Card from './Card';
+import form from '../resources/documents/Membership application form.pdf'
 
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
@@ -53,7 +54,6 @@ function Main() {
                 Danmarksgade 53, 6700 Esbjerg, <br/>
                 on the ground floor
               </div>
-              
 
               <div className='mt-8'>
                 <a href='https://www.facebook.com/groups/651480019849154/' target="_blank" rel="noopener noreferrer">
@@ -104,6 +104,17 @@ function Main() {
         </Container>
 
         <div className='my-4 p-3'><hr/></div>
+
+        <div className='m-4 text-center'>
+          <div className='font-Barlow text-gray-500 mb-3'>
+            To register to the society, complete the onboarding form and send it via email to siguebailandobachata@gmail.com
+          </div>
+          <a download href={form} className='flex w-[90%] translate-x-[5%] items-center justify-center text-white h-14 rounded-md bg-red-700 font-mono font-bold'>
+            REGISTER NOW
+          </a>
+        </div>
+
+        <div className='my-4 p-3'><hr/></div>
         
         <div className='m-4
           lg:m-14'>
@@ -115,13 +126,17 @@ function Main() {
         </div>
 
         <div className='my-4 p-3'><hr/></div>
-        
-        <div className=' mx-4
-          lg:grid lg:grid-flow-col lg:col-span-2 lg:space-x-16 lg:mx-14'>
 
-          <div className='my-4 p-4 text-sm lg:text-lg shadow-lg'>
-            <div className='font-mono text-[18px] font-semibold text-red-500 mb-2'>Open to all Adults</div>
-            <span className='font-Barlow text-gray-500'>
+        
+        <div className=' bg-blue-950 pt-10
+          lg:grid lg:grid-flow-col lg:col-span-2 lg:space-x-16 lg:mx-14'>
+        <div className='mx-4'>
+          <img className='rounded-md' src={require('../resources/media/PHOTO-2024-09-12-00-47-50.jpg')} />
+        </div>
+
+          <div className='p-4 text-sm lg:text-lg shadow-lg'>
+            <div className='font-mono text-[24px] font-semibold text-white mb-2'>Open to all Adults</div>
+            <span className='font-Barlow text-gray-300'>
               All are welcome, whether you come alone or with a partner, from first-timers to seasoned dancers. Our instructors will guide you to the class that aligns with your skills and aspirations.<br/>
               We organize parties in Esbjerg where you will have the opportunity to dance
               Bachata and other Latin Dances.
@@ -129,21 +144,33 @@ function Main() {
             </span>
           </div>
 
-          <div className='my-4'><hr/></div>
+          <div className='my-4 text-white mx-4'><hr/></div>
 
           <div className='my-4 p-4 lg:text-lg shadow-lg'>
             
-            <div className='font-mono text-[18px] font-semibold text-red-500'>Prices and Memberships</div>
-            <div className='text-center border-red-500 border-3 p-2 my-3 rounded-lg'>
-              <span className='font-Barlow text-red-600 font-extrabold'>IMPORTANT!</span><br/>
-              <span className='font-Barlow text-gray-500 font-bold'>The annual membership fee is 200 kr, starting on every January</span><br/>
+            <div className='font-mono text-[18px] font-semibold text-white'>Prices and Memberships</div>
+            
+            <div className='flex bg-red-300 items-center justify-between border-white border-3 p-2 my-3 rounded-lg'>
+              
+              <div className='flex-shrink-0'>
+                <img className='w-14' src={require('../resources/warning.png')} alt="Warning" />
+              </div>
+              
+              <div className='ml-4 text-left'>
+                <span className='font-Barlow text-red-600 font-extrabold'>IMPORTANT!</span><br/>
+                <span className='font-Barlow text-gray-500 font-bold'>
+                  The annual membership fee is 200 kr, starting on every January
+                </span>
+              </div>
+
             </div>
+
             
-            <div className='font-mono text-[16px] font-semibold text-red-500 mt-4'>Monday Bachata Class:</div>
-            <span className='font-Barlow text-gray-500'>40 kr for 1 hour</span>
+            <div className='font-mono text-[16px] font-semibold text-white mt-4'>Monday Bachata Class:</div>
+            <span className='font-Barlow text-gray-300 text-sm'>40 kr for 1 hour</span>
             
-            <div className='font-mono text-[16px] font-semibold text-red-500 mt-3'>All classes in 1 month: (must all be paid at once)</div>
-            <span className='font-Barlow text-gray-500'>The monthly price varies depending on the number of lessons per month. This includes all 3 hours of classes every monday and will cost 70kr per session. <br/> (check our Facebook group for this month's price!)</span>
+            <div className='font-mono text-[16px] font-semibold text-white mt-3'>All classes in 1 month: (must all be paid at once)</div>
+            <span className='font-Barlow text-gray-300 text-sm'>The monthly price varies depending on the number of lessons per month. This includes all 3 hours of classes every monday and will cost 70kr per session. <br/> (check our Facebook group for this month's price!)</span>
             
           </div>
             
@@ -152,10 +179,10 @@ function Main() {
 
         <div className='my-4 px-4'><hr/></div>
         
-        <div className='lg:flex my-4 p-4 font-medium text-sm lg:text-lg shadow-lg mx-4 lg:mx-14'>
+        <div className='lg:flex mt-4 p-4 font-medium text-sm lg:text-lg lg:mx-14'>
           
           <div>
-            <div className='font-mono text-[18px] font-semibold text-red-500 mb-3'>Classes with Martin & Kati</div>
+            <div className='font-mono text-[20px] font-semibold text-red-500 mb-3'>Classes with Martin & Kati</div>
             <div className='font-mono text-[16px] font-semibold text-gray-700 underline mb-2'>When?</div>
             <span className='font-Barlow text-gray-500'>
               Bachata classes every Monday<br/>
@@ -163,15 +190,19 @@ function Main() {
               20:00-21:00 Improvers Level 1: Spice up your dance with new moves.<br/>
               21:00-22:00 Improvers Level 2: Refine and elevate your Bachata style<br/>
             </span>
-            <div className='font-mono text-[16px] font-semibold text-gray-700 underline mb-2'>Where?</div>
+            <div className='font-mono text-[16px] font-semibold text-gray-700 underline mb-2 mt-3'>Where?</div>
             <span className='font-Barlow text-gray-500'>
               Danmarksgade 53, 6700 Esbjerg<br/>
               Danmarksgade School, on the ground floor
             </span>
           </div>
 
-          <div className='font-mono text-[16px] font-semibold text-gray-700 mt-4 mb-2'>Join our Facebook group here</div>
-          <img src={require('../resources/fb banner.png')}/>
+          <div className='my-4'><hr/></div>
+
+          <div className='font-mono text-[18px] font-semibold text-gray-700 mt-4 mb-2'>Join our Facebook group here</div>
+          <a href='https://www.facebook.com/groups/651480019849154'>
+            <img src={require('../resources/fb banner.png')}/>
+          </a>
 
         </div>
 
@@ -210,7 +241,17 @@ function Main() {
             <p className='font-bold font-serif text-center text-2xl lg:text-4xl my-3'>Upcoming events</p>
             <div className='px-2'><hr/></div>
             <div className='flex justify-center mt-16'>
-              <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fprofile.php%3Fid%3D61557256020103&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=902649638051626" width="170" height="250" className='mt-4 justify-center scale-150 sm:w- lg:scale-100 lg:w-[340px] lg:h-[500px]' scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+<iframe
+  src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fprofile.php%3Fid%3D61557256020103&tabs=timeline&width=800&height=900&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=902649638051626"
+  className="mt-4 mx-auto h-[450px] w-[250px] lg:w-[800px] lg:h-[900px]"
+  scrolling="no"
+  frameBorder="0"
+  allowFullScreen
+  allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+></iframe>
+
+
+
             </div>
 
           </div>

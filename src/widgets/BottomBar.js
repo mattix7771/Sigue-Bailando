@@ -23,7 +23,7 @@ function BottomNavbarComponent() {
 
       <div className="flex mb-2">
         <img className="w-6 lg:w-8 mr-2" src={require('../resources/email.png')} alt="Email" />
-        <div>siguebalando@gmail.com</div>
+        <div>siguebailandobachata@gmail.com</div>
       </div>
 
       <div className="flex mb-4">

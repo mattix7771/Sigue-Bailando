@@ -7,7 +7,8 @@ function NavbarComponent({ opacity }) {
 
   const [navOpacity, setNavOpacity] = useState(0);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const MAXSCROLL = 1000;
+  const MAXSCROLL = 600;
+  const scroll = "fixed"; // fixed for following menu or absilute for static menu
 
   const handleScroll = () => {
     if (navOpacity < MAXSCROLL && !isMenuOpen && !opacity){
@@ -43,7 +44,7 @@ function NavbarComponent({ opacity }) {
   }
 
   return (
-    <Navbar id="navbar" variant="dark" expand="lg" className=' rounded-lg translate-x-[2.5%] translate-y-[15%] lg:m-0' style={{ backgroundColor: `rgba(229, 32, 44, ${navOpacity})`, padding: 0, position: "fixed", width: "95%", top: 0, "z-index": "10" }}>
+    <Navbar id="navbar" variant="dark" expand="lg" className='w-full lg:m-0' style={{ backgroundColor: `rgba(229, 32, 44, ${navOpacity})`, padding: 0, position: `${scroll}`, top: 0, "z-index": "10" }}>
       <Container>
         
         <Navbar.Brand href="/" className='flex items-center text-white lg:px-3 font-serif'>
@@ -58,10 +59,7 @@ function NavbarComponent({ opacity }) {
             {/* <Nav.Link href="link" style={{ color: 'white', fontWeight: 'bold' }}>Billeder</Nav.Link>
             <Nav.Link href="link" style={{ color: 'white', fontWeight: 'bold' }}>Videoer</Nav.Link>
             <Nav.Link href="link" style={{ color: 'white', fontWeight: 'bold' }}>Om</Nav.Link> */}
-          </Nav>    
-          {/* <div className='bg-white rounded-full ml-20 lg:inline-block w-9' href='https://www.facebook.com/groups/651480019849154/' target="_blank" rel="noopener noreferrer">
-            <Image className='' src={require('../resources/fb_white.png')} />
-          </div> */}
+          </Nav>
         </Navbar.Collapse>
 
       </Container>
