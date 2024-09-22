@@ -7,7 +7,7 @@ import SignUp from './pages/SignUp'
 import { BrowserRouter, HashRouter } from 'react-router-dom';
 import ReactGA from 'react-ga4';
 
-ReactGA.initialize('YOUR_TRACKING_ID');
+ReactGA.initialize('G-T34HEN71TK');
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
