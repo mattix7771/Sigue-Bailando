@@ -255,25 +255,17 @@ function Main() {
           
         </div>
 
-        <div className='lg:inline-flex lg:ml-14'>
+        <div className=' lg:ml-14'>
       
-          <div className='mx-3 lg:mx-14 h-full my-16 mr-7 p-2 sm:hidden'>
+          <div className='mx-3 lg:mx-14 h-full my-16 mr-7 p-2'>
             
             <p className='font-bold font-serif text-center text-2xl lg:text-4xl my-3'>Upcoming events</p>
             <div className='px-2'><hr/></div>
-            <div className='flex justify-center mt-16'>
-            <div className='flex justify-center items-center w-full ml-20'>
-              <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fprofile.php%3Fid%3D61557256020103&tabs=timeline&width=500&height=1000&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=902649638051626" width="500" height="500" className='overflow-hidden border-none' cscrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
-            </div>
-
-
-
-            </div>
-
+            <iframe src='https://widgets.sociablekit.com/facebook-group-events/iframe/25466742' frameborder='10' width='100%' height='1000'></iframe>
           </div>
 
           
-          <div className='lg:flex lg:float-right'> 
+          <div className='lg:flex'> 
             <div className='lg:my-16 lg:mr-14 p-2 lg:ml-32'>
               
               <p className='font-bold font-serif text-center text-2xl lg:text-4xl my-3 mt-4 sm:text-4xl'>Find us here</p>
