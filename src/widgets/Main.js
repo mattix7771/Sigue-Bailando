@@ -1,4 +1,4 @@
-import React, {useRef} from 'react';
+import React, {useEffect, useState} from 'react';
 import { Container, Row, Col, Image } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../App.css';
@@ -14,6 +14,8 @@ import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 import ReactGA from "react-ga4"
 
 function Main() {
+
+  const [videoLoaded, setVideoLoaded] = useState(false);
 
   ReactGA.send({
     hitType: "pageview",
@@ -45,8 +47,9 @@ function Main() {
 
       <div>
         <div className='relative'>
+          <video autoPlay muted loop src={require('../resources/media/phoneBackgroundVideo_short.mp4')} type="video/mp4" className='blur-sm w-full lg:block' hidden={!videoLoaded}/>
+          <video autoPlay muted loop src={require('../resources/media/phoneBackgroundVideo3.mp4')} type="video/mp4" className='blur-sm w-full lg:hidden contrast-75' onLoad={() => setVideoLoaded(true)} hidden={videoLoaded}/>
           <video autoPlay muted loop src={require('../resources/video.mp4')} type="video/mp4" className='blur-sm w-full hidden lg:block'/>
-          <video autoPlay muted loop src={require('../resources/Sup/VIDEO-2024-09-12-00-27-19.mp4')} type="video/mp4" className='blur-sm w-full lg:hidden contrast-75'/>
           <div className='absolute flex items-center justify-center top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-slate-200
             w-4/5'>
         
@@ -261,6 +264,8 @@ function Main() {
             
             <p className='font-bold font-serif text-center text-2xl lg:text-4xl my-3'>Upcoming events</p>
             <div className='px-2'><hr/></div>
+
+            {/* Socialble Kit integration */}
             <iframe src='https://widgets.sociablekit.com/facebook-group-events/iframe/25466742' frameborder='10' width='100%' height='1000'></iframe>
           </div>
 
@@ -271,6 +276,8 @@ function Main() {
               <p className='font-bold font-serif text-center text-2xl lg:text-4xl my-3 mt-4 sm:text-4xl'>Find us here</p>
               <div className='px-4'><hr/></div>
               <div className='mt-4 flex justify-center'>
+
+                {/* Google map location */}
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2261.694063188233!2d8.4505979!3d55.467999899999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464b21947a785d6f%3A0x92c32164ab964820!2sEsbjerg%20Bachata%20and%20Latin%20Dance!5e0!3m2!1sen!2suk!4v1710087550056!5m2!1sen!2suk" width="500" height="500" className='sm:w-[700px] lg:w-[800px] lg:h-[500px]' allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
               </div>
             
