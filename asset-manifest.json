@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.37889b9a.css",
-    "main.js": "/static/js/main.a83c45dd.js",
+    "main.css": "/static/css/main.3a68408e.css",
+    "main.js": "/static/js/main.e58777b1.js",
     "static/media/VIDEO-2024-09-12-00-47-49.mp4": "/static/media/VIDEO-2024-09-12-00-47-49.d45b8e3c6c89f2c67653.mp4",
     "static/media/video.mp4": "/static/media/video.c360e59ef61b83cf6d9b.mp4",
     "static/media/phoneBackgroundVideo.mp4": "/static/media/phoneBackgroundVideo.2566ce0dc3bd3c7b1923.mp4",
@@ -17,10 +17,10 @@
     "static/media/WhatsApp Video 2024-03-08 at 16.31.04.mp4": "/static/media/WhatsApp Video 2024-03-08 at 16.31.04.e4db53dbcddebe444e15.mp4",
     "static/media/phoneBackgroundVideo3.mp4": "/static/media/phoneBackgroundVideo3.690194b89e5872ec3916.mp4",
     "static/media/katiuscia_rado.jpg": "/static/media/katiuscia_rado.ab44a2e72919094507b6.jpg",
+    "static/media/phoneBackgroundVideo_short.mp4": "/static/media/phoneBackgroundVideo_short.56c47354a75861c326de.mp4",
     "static/media/3.jpg": "/static/media/3.8ec98dd2c5854fa114de.jpg",
     "static/media/PHOTO-2024-09-12-00-47-49.jpg": "/static/media/PHOTO-2024-09-12-00-47-49.8ec98dd2c5854fa114de.jpg",
     "static/media/351744563___n.jpg": "/static/media/351744563_1593981374447407_4924163931767135249_n.1b7e7038290be7d0f3f6.jpg",
-    "static/media/fb banner.png": "/static/media/fb banner.3fe34e69b7c3ab7e50bf.png",
     "static/media/2.jpg": "/static/media/2.05596ff9aaa079124cb7.jpg",
     "static/media/PHOTO-2024-09-12-00-25-39.jpg": "/static/media/PHOTO-2024-09-12-00-25-39.05596ff9aaa079124cb7.jpg",
     "static/media/1photo2.jpg": "/static/media/1photo2.80047ea51f8734f3e478.jpg",
@@ -40,11 +40,11 @@
     "static/media/email.png": "/static/media/email.5b69233288e6b989c512.png",
     "static/media/warning.png": "/static/media/warning.b1d3c5484a8cbb6991dd.png",
     "index.html": "/index.html",
-    "main.37889b9a.css.map": "/static/css/main.37889b9a.css.map",
-    "main.a83c45dd.js.map": "/static/js/main.a83c45dd.js.map"
+    "main.3a68408e.css.map": "/static/css/main.3a68408e.css.map",
+    "main.e58777b1.js.map": "/static/js/main.e58777b1.js.map"
   },
   "entrypoints": [
-    "static/css/main.37889b9a.css",
-    "static/js/main.a83c45dd.js"
+    "static/css/main.3a68408e.css",
+    "static/js/main.e58777b1.js"
   ]
 }
