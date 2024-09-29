@@ -1,8 +1,8 @@
 import React, {useEffect, useState} from 'react';
-import { Container, Row, Col, Image } from 'react-bootstrap';
+import { Container, Row, Col, Image, Form } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../App.css';
-import Card from './Card';
+import ContactForm from './ContactForm';
 import form from '../resources/documents/Membership application form.pdf'
 
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -146,7 +146,7 @@ function Main() {
           <img className='rounded-md sm:w-[80%] ' src={require('../resources/media/PHOTO-2024-09-12-00-47-50.jpg')} />
         </div>
 
-          <div className='p-4 text-sm lg:text-lg shadow-lg mx-5'>
+          <div className='p-4 text-sm lg:text-lg shadow-lg mx-2'>
             <div className='font-mono text-[24px] font-semibold text-white mb-2 sm:text-4xl'>Open to all Adults</div>
             <span className='font-Barlow text-gray-300 sm:text-xl'>
               All are welcome, whether you come alone or with a partner, from first-timers to seasoned dancers. Our instructors will guide you to the class that aligns with your skills and aspirations.<br/>
@@ -162,7 +162,7 @@ function Main() {
             
             <div className='font-mono text-[18px] font-semibold text-white sm:text-3xl'>Prices and Memberships</div>
             
-            <div className='flex bg-red-300 items-center justify-between border-white border-3 p-2 my-3 rounded-lg'>
+            <div className='flex bg-red-300 items-center justify-between border-white border-3 p-2 my-3 rounded-md'>
               
               <div className='flex-shrink-0 sm'>
                 <img className='w-14 sm:w-24' src={require('../resources/warning.png')} alt="Warning" />
@@ -206,26 +206,16 @@ function Main() {
             </span>
             <div className='font-mono text-[16px] font-semibold text-gray-700 underline mb-2 mt-3 sm:text-2xl'>Where?</div>
             <span className='font-Barlow text-gray-500 sm:text-xl'>
-              Danmarksgade 53, 6700 Esbjerg<br/>
+              Danmarksgade 53, 6700 Esbjerg<br/> 
               Danmarksgade School, on the ground floor
             </span>
           </div>
-
-          <div className='my-4'><hr/></div>
-
-          <div className='font-mono text-[18px] font-semibold text-gray-700 mt-4 mb-2
-            sm:text-2xl'>
-            Join our Facebook group here
-          </div>
-          <a href='https://www.facebook.com/groups/651480019849154'>
-            <img src={require('../resources/fb banner.png')}/>
-          </a>
 
         </div>
 
 
         <div className='sm:mx-7'>
-          <p className='font-bold font-serif text-center text-2xl my-4 pt-20
+          <p className='font-bold font-serif text-center text-2xl my-4 pt-3
             sm:text-4xl
             lg:text-4xl'>
             Meet our Instructors
@@ -266,7 +256,9 @@ function Main() {
             <div className='px-2'><hr/></div>
 
             {/* Socialble Kit integration */}
-            <iframe src='https://widgets.sociablekit.com/facebook-group-events/iframe/25466742' frameborder='10' width='100%' height='1000'></iframe>
+            <div className='bg-white p-3 mt-2 shadow-lg'>
+              <iframe src='https://widgets.sociablekit.com/facebook-group-events/iframe/25466742' frameborder='10' width='100%' height='1000'></iframe>
+            </div>
           </div>
 
           
@@ -275,15 +267,25 @@ function Main() {
               
               <p className='font-bold font-serif text-center text-2xl lg:text-4xl my-3 mt-4 sm:text-4xl'>Find us here</p>
               <div className='px-4'><hr/></div>
-              <div className='mt-4 flex justify-center'>
 
-                {/* Google map location */}
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2261.694063188233!2d8.4505979!3d55.467999899999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464b21947a785d6f%3A0x92c32164ab964820!2sEsbjerg%20Bachata%20and%20Latin%20Dance!5e0!3m2!1sen!2suk!4v1710087550056!5m2!1sen!2suk" width="500" height="500" className='sm:w-[700px] lg:w-[800px] lg:h-[500px]' allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              {/* Google map location */}
+              <div className='mt-4 flex justify-center mx-3 shadow-lg'>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2261.694063188233!2d8.4505979!3d55.467999899999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464b21947a785d6f%3A0x92c32164ab964820!2sEsbjerg%20Bachata%20and%20Latin%20Dance!5e0!3m2!1sen!2suk!4v1710087550056!5m2!1sen!2suk" width="100%" height="500" className=' lg:w-[800px] lg:h-[500px]' allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
               </div>
             
             </div>
           </div>
 
+        </div>
+
+
+        <div>
+          <p className='font-bold font-serif text-center text-2xl my-4 pt-3
+            sm:text-4xl
+            lg:text-4xl'>
+            Send us a message
+          </p>
+          <ContactForm />
         </div>
         
         
