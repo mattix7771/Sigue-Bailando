@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.3a68408e.css",
-    "main.js": "/static/js/main.e58777b1.js",
+    "main.css": "/static/css/main.57276859.css",
+    "main.js": "/static/js/main.2393b858.js",
     "static/media/VIDEO-2024-09-12-00-47-49.mp4": "/static/media/VIDEO-2024-09-12-00-47-49.d45b8e3c6c89f2c67653.mp4",
     "static/media/video.mp4": "/static/media/video.c360e59ef61b83cf6d9b.mp4",
     "static/media/phoneBackgroundVideo.mp4": "/static/media/phoneBackgroundVideo.2566ce0dc3bd3c7b1923.mp4",
@@ -17,6 +17,7 @@
     "static/media/WhatsApp Video 2024-03-08 at 16.31.04.mp4": "/static/media/WhatsApp Video 2024-03-08 at 16.31.04.e4db53dbcddebe444e15.mp4",
     "static/media/phoneBackgroundVideo3.mp4": "/static/media/phoneBackgroundVideo3.690194b89e5872ec3916.mp4",
     "static/media/katiuscia_rado.jpg": "/static/media/katiuscia_rado.ab44a2e72919094507b6.jpg",
+    "static/media/VG_logo.jpg": "/static/media/VG_logo.c4ac23994abd58b626a1.jpg",
     "static/media/phoneBackgroundVideo_short.mp4": "/static/media/phoneBackgroundVideo_short.56c47354a75861c326de.mp4",
     "static/media/3.jpg": "/static/media/3.8ec98dd2c5854fa114de.jpg",
     "static/media/PHOTO-2024-09-12-00-47-49.jpg": "/static/media/PHOTO-2024-09-12-00-47-49.8ec98dd2c5854fa114de.jpg",
@@ -26,13 +27,16 @@
     "static/media/1photo2.jpg": "/static/media/1photo2.80047ea51f8734f3e478.jpg",
     "static/media/1.jpg": "/static/media/1.c695fe8f84b24fbdb2e1.jpg",
     "static/media/PHOTO-2024-09-12-00-24-48.jpg": "/static/media/PHOTO-2024-09-12-00-24-48.c695fe8f84b24fbdb2e1.jpg",
-    "static/media/PHOTO-2024-09-12-00-47-50.jpg": "/static/media/PHOTO-2024-09-12-00-47-50.1130f47e2167598df2ce.jpg",
+    "static/media/group.jpg": "/static/media/group.1130f47e2167598df2ce.jpg",
     "static/media/PHOTO-2024-09-12-00-28-37.jpg": "/static/media/PHOTO-2024-09-12-00-28-37.8aaa0b4221507feadb60.jpg",
+    "static/media/videoSnapshot.png": "/static/media/videoSnapshot.d7b1c503c20e77c57ed0.png",
     "static/media/PHOTO-2024-09-12-00-47-49 2.jpg": "/static/media/PHOTO-2024-09-12-00-47-49 2.ab18b34c271d342ca452.jpg",
     "static/media/martin_barosso.jpg": "/static/media/martin_barosso.e4fc8d7a3da54479b564.jpg",
     "static/media/logo4.png": "/static/media/logo4.dfb24c118e91d2e4cc54.png",
     "static/media/banner2.jpg": "/static/media/banner2.30c56568e5446aa06cdb.jpg",
     "static/media/banner3.jpg": "/static/media/banner3.08c0a79323c2f830c0a3.jpg",
+    "static/media/VG_logo_nobg.png": "/static/media/VG_logo_nobg.bf0841eb4b6555ead85e.png",
+    "static/media/logo5.png": "/static/media/logo5.7babd3a0a2fadb22f272.png",
     "static/media/fbJoin.png": "/static/media/fbJoin.e96bac455bd8ddaa3525.png",
     "static/media/Membership application form.pdf": "/static/media/Membership application form.da850746caab911a20c9.pdf",
     "static/media/pin.png": "/static/media/pin.aa3e8a3d6eaeffeda4e6.png",
@@ -40,11 +44,11 @@
     "static/media/email.png": "/static/media/email.5b69233288e6b989c512.png",
     "static/media/warning.png": "/static/media/warning.b1d3c5484a8cbb6991dd.png",
     "index.html": "/index.html",
-    "main.3a68408e.css.map": "/static/css/main.3a68408e.css.map",
-    "main.e58777b1.js.map": "/static/js/main.e58777b1.js.map"
+    "main.57276859.css.map": "/static/css/main.57276859.css.map",
+    "main.2393b858.js.map": "/static/js/main.2393b858.js.map"
   },
   "entrypoints": [
-    "static/css/main.3a68408e.css",
-    "static/js/main.e58777b1.js"
+    "static/css/main.57276859.css",
+    "static/js/main.2393b858.js"
   ]
 }
