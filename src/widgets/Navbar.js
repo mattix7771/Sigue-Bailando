@@ -8,7 +8,7 @@ function NavbarComponent({ opacity }) {
   const [navOpacity, setNavOpacity] = useState(0);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const MAXSCROLL = 600;
-  const scroll = "fixed"; // fixed for following menu or absilute for static menu
+  const scroll = "fixed"; // fixed for following menu or absolute for static menu
 
   const handleScroll = () => {
     if (navOpacity < MAXSCROLL && !isMenuOpen && !opacity){

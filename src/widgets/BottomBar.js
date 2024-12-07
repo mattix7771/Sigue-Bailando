@@ -6,29 +6,29 @@ import logo from "../resources/logo4.png"
 function BottomNavbarComponent() {
   return (
 <Navbar expand="lg" className="bg-black p-3 relative">
-  <Container className="flex justify-between items-center">
+  <Container className="flex justify-between items-center lg:flex-col lg:justify-center lg:items-start">
     
-    <Navbar.Brand href="/" className="flex items-center text-white lg:px-3 font-serif
+    <Navbar.Brand href="/" className="flex items-center text-white font-serif
                                       sm:w-96">
-      <img src={logo} alt="Logo" className="w-16 sm:w-24 lg:w-24 rounded-xl lg:my-2 ml-1 lg:ml-20 mr-3 lg:mr-6" />
-      <div className="text-lg sm:text-3xl lg:text-4xl pt-1">SIGUE BAILANDO</div>
+      <img src={logo} alt="Logo" className="w-16 sm:w-24 rounded-xl ml-1 mr-3" />
+      <div className="sm:text-3xl lg:text-4xl pt-1">SIGUE BAILANDO</div>
     </Navbar.Brand>
     
     <div className="text-white sm:text-2xl">Latin School in Esbjerg</div>
 
-    <div className="text-white sm:text-2xl lg:flex lg:flex-col lg:items-start">
+    <div className="text-white sm:text-2xl">
       <div className="flex mb-2 mt-4">
-        <img className="w-6 lg:w-8 mr-2" src={require('../resources/pin.png')} alt="Pin" />
+        <img className="w-6 mr-2" src={require('../resources/pin.png')} alt="Pin" />
         <div>Danmarksgade 53, 6700 Esbjerg</div>
       </div>
 
       <div className="flex mb-2">
-        <img className="w-6 lg:w-8 mr-2" src={require('../resources/email.png')} alt="Email" />
+        <img className="w-6 mr-2" src={require('../resources/email.png')} alt="Email" />
         <div>siguebailandobachata@gmail.com</div>
       </div>
 
       <div className="flex mb-4">
-        <img className="w-6 lg:w-8 mr-2" src={require('../resources/phone.png')} alt="Phone" />
+        <img className="w-6 mr-2" src={require('../resources/phone.png')} alt="Phone" />
         <div>60125289</div>
       </div>
             

@@ -5,7 +5,6 @@ import Navbar from '../widgets/Navbar';
 import BottomBar from '../widgets/BottomBar';
 import Masonry, {ResponsiveMasonry} from "react-responsive-masonry"
 
-
 function Gallery() {
 
   function importAll(r) {
@@ -23,7 +22,7 @@ function Gallery() {
         <Masonry columnsCount={2} gutter={3}>
           {images.map((image, index) => (
             <div key={index}>
-                <img src={image} style={{width:'1170px'}}/>
+              <img src={image} style={{width:'1170px'}}/>
             </div>
           ))}
           {videos.map((video, index) => (
