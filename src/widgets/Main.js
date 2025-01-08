@@ -69,8 +69,7 @@ function Main() {
               Mondays from 19:00 to 22:00<br/>
               Some Fridays from 19:00 to 21:00<br/><br/>
               Address: <br/>
-              Danmarksgade 53, 6700 Esbjerg, <br/>
-              on the ground floor
+              Edelsvej 9B, 6700 Esbjerg
             </div>
 
             <div className='mt-8 sm:text-2xl'>

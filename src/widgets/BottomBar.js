@@ -19,7 +19,7 @@ function BottomNavbarComponent() {
     <div className="text-white sm:text-2xl">
       <div className="flex mb-2 mt-4">
         <img className="w-6 mr-2" src={require('../resources/pin.png')} alt="Pin" />
-        <div>Danmarksgade 53, 6700 Esbjerg</div>
+        <div>Edelsvej 9B, 6700 Esbjerg</div>
       </div>
 
       <div className="flex mb-2">
