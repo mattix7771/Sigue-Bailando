@@ -66,7 +66,7 @@ function Main() {
   
             <div className='sm:text-2xl'>
               Bachata sessions every week<br/>
-              Mondays from 19:00 to 22:00<br/>
+              Mondays from 18:00 to 21:00<br/>
               Some Fridays from 19:00 to 21:00<br/><br/>
               Address: <br/>
               Edelsvej 9B, 6700 Esbjerg
@@ -215,14 +215,13 @@ function Main() {
             <div className='font-mono text-[16px] font-semibold text-gray-700 underline mb-2 sm:text-2xl'>When?</div>
             <span className='font-Barlow text-gray-500 sm:text-xl'>
               Bachata classes every Monday<br/>
-              19:00-20:00 Beginners: Master the basics and find your rhythm.<br/>
-              20:00-21:00 Improvers Level 1: Spice up your dance with new moves.<br/>
-              21:00-22:00 Improvers Level 2: Refine and elevate your Bachata style<br/>
+              18:00-19:00 Beginners: Master the basics and find your rhythm.<br/>
+              19:00-20:00 Improvers Level 1: Spice up your dance with new moves.<br/>
+              20:00-21:00 Improvers Level 2: Refine and elevate your Bachata style<br/>
             </span>
             <div className='font-mono text-[16px] font-semibold text-gray-700 underline mb-2 mt-3 sm:text-2xl'>Where?</div>
             <span className='font-Barlow text-gray-500 sm:text-xl'>
-              Danmarksgade 53, 6700 Esbjerg<br/> 
-              Danmarksgade School, on the ground floor
+              Edelsvej 9B, 6700 Esbjerg
             </span>
           </div>
 
@@ -255,7 +254,7 @@ function Main() {
               2xl:block 2xl:w-[45%]'>
               <p className='font-mono text-xl sm:text-2xl lg:text-4xl font-bold lg:mt-0 text-center'>Martín<br/>Dance Instructor</p>
               <div className='mt-3 lg:mx-14'>
-                <img src={martin} fluid className='h-44 rounded-3xl shadow-lg ml-5 mb-3 float-right -mt-12 2xl:mt-1 2xl:h-56'/>
+                <img src={martin} fluid className='h-44 rounded-3xl shadow-lg ml-5 mb-3 float-right 2xl:h-56'/>
                 <p className='font-Barlow text-gray-500 text-sm sm:text-xl lg:text-lg'>
                   Coming from Argentina with a culture where dancing in couples to Latin rhythms is deeply ingrained, Martin brings an authentic flair to his teaching, making his classes a truly unique experience. His eagerness to share his passion makes his classes an engaging and inspiring experience for his students. Join Martin's Bachata class and let him guide you on an unforgettable journey into the heart of this vibrant dance form, while fostering connections with fellow dance enthusiasts along the way.
                 </p>
