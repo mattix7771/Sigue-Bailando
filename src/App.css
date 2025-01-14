@@ -2,6 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer components {
+  .title {
+    @apply 
+    
+    font-mono text-xl 2xl:text-7xl 2xl:[word-spacing:-20px] sm:text-3xl font-semibold text-red-500 mb-2
+    font-mono text-[24px] font-semibold mb-2 sm:text-4xl
+    font-mono text-[18px] font-semibold text-gray-50 sm:text-3xl lg:text-red-500 xl:text-red-500 2xl:text-red-500
+  }
+}
+
 .App {
   text-align: center;
 }

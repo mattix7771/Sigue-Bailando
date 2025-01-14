@@ -14,8 +14,6 @@ function Home() {
       <Navbar />
       <Main />
       <BottomBar />
-
-
     </div>
   );
 }

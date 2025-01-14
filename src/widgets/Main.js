@@ -87,7 +87,7 @@ function Main() {
 
 
       {/* Swiper */}
-      <Container className='my-3 sm:px-24 lg:px-96 xl:hidden 2xl:hidden'>
+      <Container className='my-3 sm:px-24 lg:px-96 lg:hidden xl:hidden 2xl:hidden'>
         
         <Swiper/>
 
@@ -118,12 +118,12 @@ function Main() {
       {/* Begin Body */}
       <div className='mx-[10%]'>
 
-        <div className='my-4 p-3 2xl:hidden'><hr/></div>
+        <div className='my-4 p-3'><hr/></div>
 
         {/* First Section - Info and Registration */}
-        <div className='2xl:flex'>
+        <div className=''>
 
-          <div className='text-center 2xl:hidden'>
+          <div className='text-center'>
             <div className='font-Barlow text-gray-500 mb-3 sm:text-xl'>
               To register to the society, complete the onboarding form and send it via email to siguebailandobachata@gmail.com
             </div>
@@ -132,24 +132,15 @@ function Main() {
             </a>
           </div>
 
-          <div className='my-4 p-3 2xl:hidden'><hr/></div>
+          <div className='my-4 p-3'><hr/></div>
           
           <div className='m-4 mx-5
             lg:m-14'>
-              <div className='font-mono text-xl 2xl:text-7xl 2xl:[word-spacing:-20px] sm:text-3xl font-semibold text-red-500 mb-2'>WHAT IS BACHATA</div>
+              <div className='font-mono text-xl 2xl:text-5xl 2xl:[word-spacing:-20px] sm:text-3xl font-semibold text-red-500 mb-2'>WHAT IS BACHATA</div>
 
               <span className='font-Barlow text-gray-500 sm:text-xl'>
                 Bachata, originating from the Dominican Republic, is more than just a dance; it's a sensation that grips you in its soulful rhythms and catchy beats. This dance style isn't about intricate steps; it's about connecting with the music's flow, embracing its Latin soul, and expressing yourself. Bachata is popular worldwide, with events taking place across Denmark and around the globe. Join us every Monday in Esbjerg to immerse yourself in the rhythmic world of Bachata. Whether dancing solo or with a partner, experience the pure joy of dance in our welcoming environment, with easy-to-learn steps and captivating tunes.
               </span>
-          </div>
-
-          <div className='hidden 2xl:block text-center  2xl:bg-blue-900 2xl:rounded-lg'>
-            <div className='font-Barlow text-gray-500 2xl:text-white 2xl:p-7 mb-3 sm:text-xl'>
-              To register to the society, complete the onboarding form and send it via email to siguebailandobachata@gmail.com
-            </div>
-            <a download href={form} className='flex w-[90%] translate-x-[5%] items-center justify-center text-white h-14 rounded-md bg-red-700 font-mono font-bold sm:text-xl'>
-              REGISTER NOW
-            </a>
           </div>
 
         </div>
@@ -159,8 +150,8 @@ function Main() {
 
         
         {/* Second Section - Info and Prices */}
-        <div className='bg-blue-950 pt-10 
-          lg:grid lg:grid-flow-col lg:col-span-2 lg:space-x-16 lg:mx-14 lg:bg-gray-100 lg:text-red-500
+        <div className='bg-blue-950 bg-opacity-80 pt-14 pb-2
+          lg:grid lg:grid-flow-col lg:col-span-2 lg:space-x-[0%] lg:bg-gray-100 lg:text-red-500
           xl:bg-gray-100 xl:text-red-500
           2xl:bg-gray-100 2xl:text-red-500'>
 
@@ -169,7 +160,7 @@ function Main() {
           </div>
 
           <div className='p-4 text-sm lg:text-lg mx-2'>
-            <div className='font-mono text-[24px] font-semibold mb-2 sm:text-4xl'>
+            <div className='font-mono text-[18px] font-semibold text-gray-50 sm:text-3xl lg:text-red-500 xl:text-red-500 2xl:text-red-500 mb-2'>
               Open to all Adults
             </div>
             <span className='font-Barlow text-gray-300 sm:text-xl lg:text-gray-500 xl:text-gray-500 2xl:text-gray-500'>
@@ -182,7 +173,7 @@ function Main() {
 
           <div className='my-4 text-white mx-4'><hr/></div>
 
-          <div className='my-4 p-4 lg:text-lg sm:mx-10'>
+          <div className='mb-4 p-4 lg:text-lg sm:mx-10'>
             
             <div className='font-mono text-[18px] font-semibold text-gray-50 sm:text-3xl lg:text-red-500 xl:text-red-500 2xl:text-red-500'>Prices and Memberships</div>
             
@@ -248,28 +239,30 @@ function Main() {
           <div className='px-4'><hr/></div>
           
           <div className='2xl:flex'>
-            <div className='my-4 mx-4 p-4 shadow-lg
-              sm:mx-96
-              lg:mx-14 lg:mt-20
-              2xl:block 2xl:max-w-[45%]'>
-              <p className='font-mono text-xl sm:text-2xl lg:text-4xl font-bold lg:mt-0'>Martín - Dance Instructor</p>
+
+            <div className='my-4 p-4 shadow-lg lg:mx-14 lg:mt-20 2xl:block 2xl:w-[45%]'>
+              <p className='font-mono text-xl sm:text-2xl lg:text-4xl font-bold lg:mt-0 text-center'>Katiuscia<br/>Dance Instructor & Chairman</p>
               <div className='mt-3 lg:mx-14'>
-                <img src={martin} fluid className='h-44 rounded-3xl shadow-lg ml-5 mb-3 float-right -mt-12'/>
+                <img src={katiuscia} fluid className='h-44 rounded-3xl shadow-lg ml-5 mb-3 float-right 2xl:h-56'/>
+                <p className='font-Barlow text-gray-500 text-sm sm:text-xl lg:text-lg'>
+                Originally from Italy, where the Latin music sets the rhythm for every dance night, she has always harbored a deep passion for dancing. In 2016, she discovered her interest in Cuban Salsa and Dominican Bachata while in Denmark. Since that moment, she has never ceased to dance. By 2022, she redirected her focus toward Bachata Sensual, culminating in the inauguration of the first Bachata school in Esbjerg. Her mission is to instill a deeper connection to the art of dance, fostering an appreciation for the emotional and expressive facets of movement, beyond the mere acquisition of standard figures. She brings good vibes to every lesson.
+                </p>
+              </div>
+            </div>
+
+            <div className='my-4 ml-4 p-4 shadow-lg
+              lg:mx-14 lg:mt-20
+              2xl:block 2xl:w-[45%]'>
+              <p className='font-mono text-xl sm:text-2xl lg:text-4xl font-bold lg:mt-0 text-center'>Martín<br/>Dance Instructor</p>
+              <div className='mt-3 lg:mx-14'>
+                <img src={martin} fluid className='h-44 rounded-3xl shadow-lg ml-5 mb-3 float-right -mt-12 2xl:mt-1 2xl:h-56'/>
                 <p className='font-Barlow text-gray-500 text-sm sm:text-xl lg:text-lg'>
                   Coming from Argentina with a culture where dancing in couples to Latin rhythms is deeply ingrained, Martin brings an authentic flair to his teaching, making his classes a truly unique experience. His eagerness to share his passion makes his classes an engaging and inspiring experience for his students. Join Martin's Bachata class and let him guide you on an unforgettable journey into the heart of this vibrant dance form, while fostering connections with fellow dance enthusiasts along the way.
                 </p>
               </div>
             </div>
 
-            <div className='my-4 mx-4 p-4 shadow-lg lg:mx-14 lg:mt-20 2xl:block 2xl:max-w-[45%]'>
-              <p className='font-mono text-xl sm:text-2xl lg:text-4xl font-bold lg:mt-0'>Katiuscia - Dance Instructor & Chairman</p>
-              <div className='mt-3 lg:mx-14'>
-                <img src={katiuscia} fluid className='h-44 rounded-3xl shadow-lg ml-5 mb-3 float-right'/>
-                <p className='font-Barlow text-gray-500 text-sm sm:text-xl lg:text-lg'>
-                Originally from Italy, where the Latin music sets the rhythm for every dance night, she has always harbored a deep passion for dancing. In 2016, she discovered her interest in Cuban Salsa and Dominican Bachata while in Denmark. Since that moment, she has never ceased to dance. By 2022, she redirected her focus toward Bachata Sensual, culminating in the inauguration of the first Bachata school in Esbjerg. Her mission is to instill a deeper connection to the art of dance, fostering an appreciation for the emotional and expressive facets of movement, beyond the mere acquisition of standard figures. She brings good vibes to every lesson.
-                </p>
-              </div>
-            </div>
+            
           </div>
 
           
@@ -290,41 +283,51 @@ function Main() {
         <div>
           <div className={test}>Sponsors</div>
           <div className='px-4 my-4'><hr/></div>
-          <div className='grid grid-cols-2 gap-14 items-center m-4'> 
+          <div className='grid grid-cols-2 gap-14 lg:gap-32 items-center m-4'> 
             <img src={VG_logo_nobg} className='w-full h-auto'></img>
             <img src={big_logo} className='w-full h-auto'></img>
           </div>
         </div>
         
         {/* Find Us and Contact */}
-        <div className='2xl:flex xl:flex lg:flex'>
+        <div className="2xl:flex mb-6">
 
-          <div className='lg:flex'> 
-            <div className='lg:my-16 lg:mr-14 p-2'>
-              
-              <p className='font-bold font-serif text-center text-2xl lg:text-4xl my-3 mt-4 sm:text-4xl'>Find us here</p>
-              <div className='px-4'><hr/></div>
-
-              {/* Google map location */}
-              <div className='mt-4 flex justify-center mx-3 shadow-lg'>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2261.694063188233!2d8.4505979!3d55.467999899999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464b21947a785d6f%3A0x92c32164ab964820!2sEsbjerg%20Bachata%20and%20Latin%20Dance!5e0!3m2!1sen!2suk!4v1710087550056!5m2!1sen!2suk" width="100%" height="500" className=' lg:w-[700px] lg:h-[500px]' allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-              </div>
-            
-            </div>
+        {/* Find us here section */}
+        <div className="2xl:w-1/2">
+          <p className="font-bold font-serif text-center text-2xl lg:text-4xl my-3 mt-4 sm:text-4xl">
+            Find us here
+          </p>
+          <div className="px-4">
+            <hr />
           </div>
 
-
-          <div>
-            <p className='font-bold font-serif text-center text-2xl mt-5 pt-3
-              sm:text-4xl
-              lg:text-4xl'>
-              Send us a message
-            </p>
-            <div className='px-4 pt-5 pb-4'><hr/></div>
-            <ContactForm />
+          {/* Google map location */}
+          <div className="mt-4 flex justify-center mx-3">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2261.694063188233!2d8.4505979!3d55.467999899999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464b21947a785d6f%3A0x92c32164ab964820!2sEsbjerg%20Bachata%20and%20Latin%20Dance!5e0!3m2!1sen!2suk!4v1710087550056!5m2!1sen!2suk"
+              width="100%"
+              height="500"
+              className="lg:w-[700px] lg:h-[500px]"
+              allowFullScreen=""
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+            ></iframe>
           </div>
-        
         </div>
+
+        {/* Send us a message section */}
+        <div className="2xl:w-1/2 2xl:pl-10">
+          <p className="font-bold font-serif text-center text-2xl pt-3 sm:text-4xl lg:text-4xl">
+            Send us a message
+          </p>
+          <div className="px-4 my-3 pb-4">
+            <hr />
+          </div>
+          <ContactForm />
+        </div>
+        </div>
+
+
           
         
       </div>

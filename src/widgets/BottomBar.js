@@ -18,17 +18,17 @@ function BottomNavbarComponent() {
 
     <div className="text-white sm:text-2xl">
       <div className="flex mb-2 mt-4">
-        <img className="w-6 mr-2" src={require('../resources/pin.png')} alt="Pin" />
+        <img className="w-6 h-full pt-1 mr-2" src={require('../resources/pin.png')} alt="Pin" />
         <div>Edelsvej 9B, 6700 Esbjerg</div>
       </div>
 
       <div className="flex mb-2">
-        <img className="w-6 mr-2" src={require('../resources/email.png')} alt="Email" />
+        <img className="w-6 h-full pt-1 mr-2" src={require('../resources/email.png')} alt="Email" />
         <div>siguebailandobachata@gmail.com</div>
       </div>
 
       <div className="flex mb-4">
-        <img className="w-6 mr-2" src={require('../resources/phone.png')} alt="Phone" />
+        <img className="w-6 h-full pt-1 mr-2" src={require('../resources/phone.png')} alt="Phone" />
         <div>60125289</div>
       </div>
             
