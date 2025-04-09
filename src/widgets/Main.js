@@ -24,6 +24,7 @@ import group from '../resources/media/group.jpg';
 import warning from '../resources/warning.png';
 import katiuscia from '../resources/katiuscia_rado.jpg';
 import martin from '../resources/martin_barosso.jpg';
+import sumup from '../resources/sumup.png';
 
 function Main() {
 
@@ -125,16 +126,17 @@ function Main() {
 
           <div className='text-center'>
             <div className='font-Barlow text-gray-500 mb-3 sm:text-xl'>
-              To register to the society, complete the onboarding form and send it via email to siguebailandobachata@gmail.com
+                Interested in joining our association? Secure your membership for the year by completing your payment at the following link.
             </div>
-            <a download href={form} className='flex w-[90%] translate-x-[5%] items-center justify-center text-white h-14 rounded-md bg-red-700 font-mono font-bold sm:text-xl'>
-              REGISTER NOW
+            <a href='https://pay.sumup.com/b2c/Q59Q3WDM' className='flex w-[90%] translate-x-[5%] items-center justify-center h-14 rounded-md bg-white font-mono font-bold sm:text-xl border-4 border-black'>
+              Pay with 
+              <img className='pl-3 h-full' src={sumup}/>
             </a>
           </div>
 
           <div className='my-4 p-3'><hr/></div>
           
-          <div className='m-4 mx-5
+          <div className='m-4
             lg:m-14'>
               <div className='font-mono text-xl 2xl:text-5xl 2xl:[word-spacing:-20px] sm:text-3xl font-semibold text-red-500 mb-2'>WHAT IS BACHATA</div>
 
@@ -161,7 +163,7 @@ function Main() {
 
           <div className='p-4 text-sm lg:text-lg mx-2'>
             <div className='font-mono text-[18px] font-semibold text-gray-50 sm:text-3xl lg:text-red-500 xl:text-red-500 2xl:text-red-500 mb-2'>
-              Open to all Adults
+              Open to All - All Ages Welcome!
             </div>
             <span className='font-Barlow text-gray-300 sm:text-xl lg:text-gray-500 xl:text-gray-500 2xl:text-gray-500'>
               All are welcome, whether you come alone or with a partner, from first-timers to seasoned dancers. Our instructors will guide you to the class that aligns with your skills and aspirations.<br/>
@@ -185,8 +187,8 @@ function Main() {
               
               <div className='ml-4 text-left'>
                 <span className='font-Barlow text-red-600 font-extrabold sm:text-2xl'>IMPORTANT!</span><br/>
-                <span className='font-Barlow text-gray-500 font-bold sm:text-xl'>
-                  The annual membership fee is 200 kr, starting on every January
+                <span className='font-Barlow text-white font-bold sm:text-xl'>
+                  The annual membership fee is 200 kr, and is required after 4 trial classes
                 </span>
               </div>
 
@@ -194,10 +196,14 @@ function Main() {
 
             
             <div className='font-mono text-[16px] font-semibold text-gray-50 mt-4 sm:text-2xl lg:text-red-500 xl:text-red-500 2xl:text-red-500'>Monday Bachata Class:</div>
-            <span className='font-Barlow text-gray-500 text-sm sm:text-xl'>40 kr for 1 hour</span>
+            <span className='font-Barlow text-gray-100 text-sm sm:text-xl pl-[2%]'>40kr for 1 hour beginners class</span><br/>
+            <span className='font-Barlow text-gray-100 text-sm sm:text-xl pl-[2%]'>85kr for single Monday, all classes</span>
             
-            <div className='font-mono text-[16px] font-semibold text-gray-50 mt-3 sm:text-2xl lg:text-red-500 xl:text-red-500 2xl:text-red-500'>All classes in 1 month: (must all be paid at once)</div>
-            <span className='font-Barlow text-gray-500 text-sm sm:text-xl'>The monthly price varies depending on the number of lessons per month. This includes all 3 hours of classes every monday and will cost 70kr per session. <br/> (check our Facebook group for this month's price!)</span>
+            <div className='font-mono text-[16px] font-semibold text-gray-50 mt-3 sm:text-2xl lg:text-red-500 xl:text-red-500 2xl:text-red-500'>All classes in 1 month:</div>
+            <span className='font-Barlow text-gray-100 text-sm sm:text-xl pl-[2%]'>280kr/month FULL PACK, all classes and practice sessions</span><br/>
+            <span className='font-Barlow text-gray-100 text-sm sm:text-xl pl-[2%]'>(price is for 4 weeks)</span><br/>
+            <span className='font-Barlow text-gray-100 text-sm sm:text-xl pl-[2%]'>Annual membership is required (200 kr)</span><br/>
+            <span className='font-Barlow text-gray-100 text-sm sm:text-xl pl-[2%]'>A discount is available for people under 25</span>
             
           </div>
             
@@ -249,9 +255,7 @@ function Main() {
               </div>
             </div>
 
-            <div className='my-4 ml-4 p-4 shadow-lg
-              lg:mx-14 lg:mt-20
-              2xl:block 2xl:w-[45%]'>
+            <div className='my-4 p-4 shadow-lg lg:mx-14 lg:mt-20 2xl:block 2xl:w-[45%]'>
               <p className='font-mono text-xl sm:text-2xl lg:text-4xl font-bold lg:mt-0 text-center'>Martín<br/>Dance Instructor</p>
               <div className='mt-3 lg:mx-14'>
                 <img src={martin} fluid className='h-44 rounded-3xl shadow-lg ml-5 mb-3 float-right 2xl:h-56'/>
@@ -267,13 +271,13 @@ function Main() {
           
         </div>
 
-        <div className='mx-3 lg:mx-14 h-full my-16 mr-7 p-2'>
+        <div className='lg:mx-14 h-full my-16'>
           
           <p className='font-bold font-serif text-center text-2xl lg:text-4xl my-3'>Upcoming events</p>
           <div className='px-2'><hr/></div>
 
           {/* Socialble Kit integration */}
-          <div className='bg-white p-3 mt-2 shadow-lg'>
+          <div className='bg-white p-1 mt-2 shadow-lg'>
             <iframe src='https://widgets.sociablekit.com/facebook-group-events/iframe/25466742' frameborder='10' width='100%' height='1500'></iframe>
           </div>
         </div>
