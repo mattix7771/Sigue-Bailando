@@ -29,7 +29,8 @@ import sumup from '../resources/sumup.png';
 function Main() {
 
   // Check if full background video has loaded
-  const [videoLoaded, setVideoLoaded] = useState(false);
+  const [videoLoaded, setVideoLoaded] = useState(false)
+  const [isOpen, setIsOpen] = useState(true)
 
   const test = "font-bold font-serif text-center text-2xl lg:text-4xl my-3 mt-4 sm:text-4xl "
 
@@ -50,6 +51,25 @@ function Main() {
   
   return (
     <div className='bg-gray-100'>
+
+      {isOpen && (
+        <div className="fixed inset-0 z-[9999] flex items-center justify-center pointer-events-none">
+          <div className="relative bg-white rounded-2xl shadow-2xl p-6 w-80 text-center pointer-events-auto">
+            
+            <button
+              onClick={() => setIsOpen(false)}
+              className="absolute top-2 right-2 text-gray-500 hover:text-gray-800 text-lg font-bold"
+            >
+              ×
+            </button>
+
+            <h2 className="text-xl font-semibold mb-2">Hello There 👋</h2>
+            <p className="text-gray-600 font-bold">
+              Unfortunately Bachata lessons are temporarily closed until further notice <br/><br/> Contact <br/> siguebailandobachata@gmail.com <br/> Phone 60125289
+            </p>
+          </div>
+        </div>
+      )}
 
       {/* Video Section */}
       <div className='relative'>
